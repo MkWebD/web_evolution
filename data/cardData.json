@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "date": "1969",
+        "title": "ARPANET: The Birth of the Internet",
+        "description": "ARPANET, the precursor to the internet, was established in 1969 by the U.S. Department of Defense's Advanced Research Projects Agency (ARPA). It connected four computers and laid the foundation for the global network we know today.",
+        "image": "/arpanet.jpg",
+        "color": "#6cab70"
+    },
+    {
+        "id": 2,
+        "date": "1989",
+        "title": "World Wide Web (WWW) Invented",
+        "description": "In 1989, Sir Tim Berners-Lee, a British computer scientist, proposed the concept of the World Wide Web. He developed the first web browser and web server, unleashing the potential for information sharing on a global scale.",
+        "image": "/www.png",
+        "color": "#f7edb0"
+    },
+    {
+        "id": 3,
+        "date": "August 6, 1991",
+        "title": "The First Website Goes Live",
+        "description": "On August 6, 1991, the world's first website, info.cern.ch, was launched by Tim Berners-Lee. It provided information about the World Wide Web and how to use it.",
+        "image": "/first_website.jpg",
+        "color": " #deb759"
+    },
+    {
+        "id": 4,
+        "date": "1993",
+        "title": "Introduction of Mosaic Web Browser",
+        "description": "In 1993, Mosaic, the first popular web browser, was released. Its user-friendly interface and ability to display images made it a significant milestone in web usability.",
+        "image": "/mosaic.jpg",
+        "color": "#c86c3b"
+    },
+    {
+        "id": 5,
+        "date": "1995",
+        "title": "JavaScript Revolutionizes Web Interactivity",
+        "description": "Netscape introduced JavaScript in 1995, allowing developers to create dynamic and interactive content on web pages. This revolutionized the user experience and paved the way for modern web applications.",
+        "image": "/javascript.png",
+        "color": "#77353f"
+    },
+    {
+        "id": 6,
+        "date": "Late 1990s",
+        "title": "The Dot-com Bubble",
+        "description": "The late 1990s witnessed a rapid increase in internet-based companies, leading to the dot-com bubble. Though many companies failed, this era saw significant advancements in e-commerce and online services.",
+        "image": "/dotcom.jpg",
+        "color": "#6cab70"
+    },
+    {
+        "id": 7,
+        "date": "Around 2004",
+        "title": "Web 2.0: The Rise of User-Generated Content",
+        "description": "Around 2004, Web 2.0 emerged, emphasizing user-generated content and social interactions. Platforms like Facebook, YouTube, and Wikipedia became popular, shaping the internet's social landscape.",
+        "image": "/web_20.jpg",
+        "color": "#f7edb0"
+    },
+    {
+        "id": 8,
+        "date": "Late 2000s",
+        "title": "Mobile Web and Responsive Design",
+        "description": "The advent of smartphones and mobile devices in the late 2000s led to the rise of the mobile web. Responsive web design became crucial to deliver a seamless user experience across various devices.",
+        "image": "/responsive.jpg",
+        "color": "#deb759"
+    },
+    {
+        "id": 9,
+        "date": "2008",
+        "title": "The Age of Apps: App Stores Launch",
+        "description": "Apple's App Store was introduced in 2008, followed by the Android Market (later Google Play). Mobile apps revolutionized how users interacted with the web and expanded its capabilities.",
+        "image": "/app_store.png",
+        "color": "#c86c3b"
+    },
+    {
+        "id": 10,
+        "date": "2010s",
+        "title": "Rise of Cloud Computing",
+        "description": "Cloud computing gained popularity in the 2010s, enabling access to web-based applications and storage from anywhere. It revolutionized web hosting and data management.",
+        "image": "/cloud_computing.png",
+        "color": "#77353f"
+    },
+    {
+        "id": 11,
+        "date": "Ongoing since the 2010s",
+        "title": "IoT and Connected Devices",
+        "description": "The Internet of Things (IoT) gained traction, connecting everyday devices to the web. Smart homes, wearables, and other IoT devices transformed how people interacted with technology.",
+        "image": "/iot.png",
+        "color": "#6cab70"
+    },
+    {
+        "id": 12,
+        "date": "Ongoing since the 2010s",
+        "title": "Artificial Intelligence and Voice Assistants",
+        "description": "AI integration and voice assistants like Siri, Alexa, and Google Assistant became integral parts of web experiences. They offer personalized recommendations and streamline tasks.",
+        "image": "/ai.png",
+        "color": "#f7edb0"
+    },
+    {
+        "id": 13,
+        "date": "Ongoing (anticipated in the coming years)",
+        "title": "Web 3.0 and the Future",
+        "description": "Web 3.0 is envisioned as a semantic web, where AI and machine learning enable more intelligent, context-aware applications. The future of the web promises even greater possibilities.",
+        "image": "/web_30.webp",
+        "color": "#deb759"
+    }
+]

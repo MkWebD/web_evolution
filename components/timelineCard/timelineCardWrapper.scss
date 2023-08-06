@@ -1,0 +1,39 @@
+.timeline {
+    &__body--line {
+        position: relative;
+        width: 6px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background: #fff;
+
+        &::after {
+            transition: background 0.5s ease-in-out;
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: inherit;
+            z-index: 1;
+        }
+
+        &.in-view::after {
+            background-color: transparent;
+            border: 0.3rem solid var(--accent-color);
+            border-radius: 50%;
+        }
+    }
+}
+
+.timeline__body--line::after {
+    transition: background 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline__body--line {
+        margin-left: 20px;
+    }
+}

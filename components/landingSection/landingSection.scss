@@ -1,0 +1,42 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+
+    &__body {
+        background-color: #cccccc;
+        font-weight: 400;
+        width: 100%;
+        position: relative;
+
+        & > p {
+            text-indent: 2rem;
+            padding: 1.2rem;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: #cccccc;
+            width: 100%;
+            height: 10rem;
+            transform: skew(0deg, 4deg);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            transform-origin: bottom left;
+            z-index: -1;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        @media screen and (min-width: 768px) {
+            & > p {
+                text-indent: 0;
+            }
+        }
+    }
+}

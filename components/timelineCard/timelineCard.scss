@@ -1,0 +1,143 @@
+.card {
+    --inlineP: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px 15px 0;
+    box-shadow: 0px 6px 3px -2px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    &__image {
+        float: right;
+        shape-outside: url("../../public/arpanet.jpg");
+    }
+
+    &__date {
+        --dateH: 3rem;
+        height: var(--dateH);
+        margin-inline: calc(var(--inlineP) * -1);
+
+        text-align: center;
+        background-color: var(--accent-color);
+
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px #000;
+
+        display: grid;
+        place-content: center;
+        position: relative;
+
+        border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+
+        /* Date flap */
+        &::before {
+            content: "";
+            width: var(--inlineP);
+            aspect-ratio: 1;
+            background: var(--accent-color);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+            position: absolute;
+            top: 100%;
+
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+            right: 0;
+        }
+    }
+
+    &__title,
+    &__description {
+        position: relative;
+        padding-inline: 1.5rem;
+    }
+
+    &__title {
+        overflow: hidden;
+        padding-block-start: 1.5rem;
+        padding-block-end: 1rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        padding-block-end: 1.5rem;
+        font-weight: 300;
+    }
+
+    /* shadows */
+    &__title::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 0.5rem;
+        background: rgba(0, 0, 0, 0.5);
+        left: 50%;
+        border-radius: 50%;
+        filter: blur(4px);
+        transform: translate(-50%, 50%);
+        bottom: calc(100% + 0.125rem);
+    }
+}
+
+.timeline__body--line:nth-child(odd) .card {
+    left: 45px;
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline__body--line:nth-child(odd) .card::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--accent-color) transparent transparent;
+}
+
+.timeline__body--line:nth-child(even) .card {
+    left: -439px;
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline__body--line:nth-child(even) .card::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent var(--accent-color);
+}
+
+.timeline__body--line.in-view .card {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 250px;
+    }
+    .timeline__body--line:nth-child(even) .card {
+        left: -289px;
+        /*250+45-6*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(100vw - 91px);
+    }
+    .timeline__body--line:nth-child(even) .card {
+        left: 45px;
+    }
+    .timeline__body--line:nth-child(even) .card::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--accent-color) transparent transparent;
+    }
+}
