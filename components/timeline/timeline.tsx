@@ -15,8 +15,8 @@ export default function Timeline() {
 	return (
 		<section className="timeline">
 			<h1 className="timeline__title">Historical timeline of Web development</h1>
-			<h2 className="timeline__subtitle">Key milestones from the birth of Arpanet in 1969</h2>
-			<div className="timeline__separator" />
+			<h2 className="subtitle">Key milestones from the birth of Arpanet in 1969</h2>
+			<div className="separator" />
 			<ul className="timeline__body">
 				{elements.map((element) => {
 					return <TimelineCardWrapper key={element.id} element={element} />;

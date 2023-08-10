@@ -1,14 +1,14 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
 .landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex-center(space-evenly, center, column);
     height: 100vh;
     position: relative;
     z-index: 0;
 
     &__body {
-        background-color: #cccccc;
+        background-color: $secondary-color;
         font-weight: 400;
         width: 100%;
         position: relative;
@@ -19,17 +19,14 @@
         }
 
         &::after {
-            content: "";
-            display: block;
-            background-color: #cccccc;
+            @include pseudo-element(absolute, block, -1);
+            background-color: $secondary-color;
             width: 100%;
             height: 10rem;
             transform: skew(0deg, 4deg);
-            position: absolute;
             bottom: 0px;
             right: 0px;
             transform-origin: bottom left;
-            z-index: -1;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
         }
 

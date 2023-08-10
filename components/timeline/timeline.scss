@@ -9,23 +9,4 @@
     &__title {
         text-align: center;
     }
-    &__subtitle {
-        text-align: center;
-        font-weight: 300;
-        color: grey;
-        font-size: medium;
-    }
-    &__separator {
-        border-top: 1px solid #ccc;
-        width: 80%;
-        margin: 0.5rem auto 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .timeline {
-        &__subtitle {
-            margin-top: 0.5rem;
-        }
-    }
 }

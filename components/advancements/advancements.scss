@@ -1,0 +1,25 @@
+.advancements {
+    padding: 50px 0;
+
+    &__title {
+        text-align: center;
+    }
+    & .subtitle__padding {
+        padding: 0.2rem;
+    }
+    &__wrapper {
+        padding: 25px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .advancements {
+        &__wrapper {
+            margin: 0 20px;
+        }
+    }
+}

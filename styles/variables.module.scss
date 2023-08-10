@@ -1,0 +1,14 @@
+$primary-color: #03446a;
+$secondary-color: #cccccc;
+$tertiary-color: #fff;
+
+$shadow-color: #000;
+
+$transition-duration-effect: 0.5s ease-in-out;
+
+$inline-padding: 1.5rem;
+$date-height: 3rem;
+
+:export {
+    primaryColor: $primary-color;
+}

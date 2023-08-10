@@ -1,0 +1,27 @@
+@mixin flex-center($justification: center, $alignement: center, $direction: row) {
+    display: flex;
+    justify-content: $justification;
+    align-items: $alignement;
+
+    @if $direction != row {
+        flex-direction: $direction;
+    }
+}
+
+@mixin full-size {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin pseudo-element($position, $display: null, $z-index: null) {
+    content: "";
+    position: $position;
+
+    @if $display != null {
+        display: $display;
+    }
+
+    @if $z-index != null {
+        z-index: $z-index;
+    }
+}

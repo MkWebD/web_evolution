@@ -1,17 +1,18 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
 .card {
-    --inlineP: 1.5rem;
     position: relative;
     bottom: 0;
     width: 400px;
     padding: 15px 15px 0;
-    box-shadow: 0px 6px 3px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 3px -2px rgba($shadow-color, 0.2);
     visibility: hidden;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all $transition-duration-effect;
 
     &::before {
-        content: "";
-        position: absolute;
+        @include pseudo-element(absolute);
         bottom: 7px;
         width: 0;
         height: 0;
@@ -24,32 +25,30 @@
     }
 
     &__date {
-        --dateH: 3rem;
-        height: var(--dateH);
-        margin-inline: calc(var(--inlineP) * -1);
+        height: $date-height;
+        margin-inline: calc($inline-padding * -1);
 
         text-align: center;
         background-color: var(--accent-color);
 
-        color: white;
+        color: $tertiary-color;
         font-size: 1.25rem;
         font-weight: 700;
-        text-shadow: 1px 1px 2px #000;
+        text-shadow: 1px 1px 2px $shadow-color;
 
         display: grid;
         place-content: center;
         position: relative;
 
-        border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+        border-radius: calc($date-height / 2) 0 0 calc($date-height / 2);
 
         /* Date flap */
         &::before {
-            content: "";
-            width: var(--inlineP);
+            @include pseudo-element(absolute);
+            width: $inline-padding;
             aspect-ratio: 1;
             background: var(--accent-color);
-            background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
-            position: absolute;
+            background-image: linear-gradient(rgba($shadow-color, 0.2) 100%, transparent);
             top: 100%;
 
             clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -77,11 +76,10 @@
 
     /* shadows */
     &__title::before {
-        content: "";
-        position: absolute;
+        @include pseudo-element(absolute);
         width: 90%;
         height: 0.5rem;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba($shadow-color, 0.5);
         left: 50%;
         border-radius: 50%;
         filter: blur(4px);
