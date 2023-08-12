@@ -12,11 +12,7 @@ export default function TimelineCardWrapper({ element }: { element: timelineElem
 	useIntersectionObserver<HTMLLIElement>(reference, false, setIsIntersecting);
 
 	return (
-		<li
-			className={`timeline__body--line ${isIntersecting ? "in-view" : ""}`}
-			ref={reference}
-			style={{ "--accent-color": `${element.color}` } as React.CSSProperties}
-		>
+		<li className={`timeline__body--line ${isIntersecting ? "in-view" : ""}`} ref={reference}>
 			<TimelineCard element={element} />
 		</li>
 	);

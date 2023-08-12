@@ -14,7 +14,7 @@ import "./timeline.scss";
 export default function Timeline() {
 	return (
 		<section className="timeline">
-			<h1 className="timeline__title">Historical timeline of Web development</h1>
+			<h1 className="title">Historical timeline of Web development</h1>
 			<h2 className="subtitle">Key milestones from the birth of Arpanet in 1969</h2>
 			<div className="separator" />
 			<ul className="timeline__body">

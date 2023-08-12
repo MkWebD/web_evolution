@@ -23,7 +23,7 @@
 
         &.in-view::after {
             background-color: transparent;
-            border: 0.3rem solid var(--accent-color);
+            border: 0.3rem solid $primary-color;
             border-radius: 50%;
         }
     }

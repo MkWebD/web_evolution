@@ -1,3 +1,6 @@
+@import "/styles/variables.module.scss";
+@import "/styles/mixins.module.scss";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,6 +25,13 @@ a {
   border-top: 1px solid #ccc;
   width: 80%;
   margin: 0.5rem auto 0;
+}
+
+.title {
+  text-align: center;
+  color: $primary-color;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 2px rgba($shadow-color, 0.2);
 }
 
 .subtitle {

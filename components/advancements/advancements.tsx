@@ -12,7 +12,7 @@ export default function Advancements() {
 	return (
 		<main className="advancements">
 			<header>
-				<h2 className="advancements__title">Technological Advancements:</h2>
+				<h2 className="title">Technological Advancements:</h2>
 				<p className="subtitle subtitle__padding">
 					The evolution of the web has been closely tied to significant technological advancements that have shaped its
 					capabilities and functionalities. These breakthroughs have not only expanded the possibilities for web

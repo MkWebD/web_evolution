@@ -29,7 +29,7 @@
         margin-inline: calc($inline-padding * -1);
 
         text-align: center;
-        background-color: var(--accent-color);
+        background-color: $primary-color;
 
         color: $tertiary-color;
         font-size: 1.25rem;
@@ -47,7 +47,7 @@
             @include pseudo-element(absolute);
             width: $inline-padding;
             aspect-ratio: 1;
-            background: var(--accent-color);
+            background: $primary-color;
             background-image: linear-gradient(rgba($shadow-color, 0.2) 100%, transparent);
             top: 100%;
 
@@ -96,7 +96,7 @@
 .timeline__body--line:nth-child(odd) .card::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent var(--accent-color) transparent transparent;
+    border-color: transparent $primary-color transparent transparent;
 }
 
 .timeline__body--line:nth-child(even) .card {
@@ -107,7 +107,7 @@
 .timeline__body--line:nth-child(even) .card::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent var(--accent-color);
+    border-color: transparent transparent transparent $primary-color;
 }
 
 .timeline__body--line.in-view .card {
@@ -136,6 +136,6 @@
     .timeline__body--line:nth-child(even) .card::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent var(--accent-color) transparent transparent;
+        border-color: transparent $primary-color transparent transparent;
     }
 }
