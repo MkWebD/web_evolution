@@ -5,7 +5,6 @@ export type timelineElementType = {
 	title: string;
 	description: string;
 	image: string;
-	color: string;
 };
 import elements from "../../data/cardData.json";
 import TimelineCardWrapper from "../timelineCard/timelineCardWrapper";

@@ -1,6 +1,33 @@
 @import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
 
-.webApps {
-    &__header {
+.webApps__header {
+    margin-bottom: 2rem;
+    &--info {
+        margin: 1.5rem auto 0;
+        max-width: 70vw;
+        padding: 0.5rem;
+        text-align: center;
+        color: $primary-color;
+        font-weight: bold;
+        border: 2px solid $primary-color;
+        border-radius: 2.5rem;
+    }
+}
+
+.circles {
+    display: grid;
+    grid-template-columns: repeat(1, calc($circleInnerSize));
+    justify-content: center;
+    gap: $circleRimSize;
+    padding: $circleRimSize;
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+    .webApps__header {
+        &--info {
+            max-width: 40vw;
+        }
     }
 }

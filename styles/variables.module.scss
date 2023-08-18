@@ -9,6 +9,9 @@ $transition-duration-effect: 0.5s ease-in-out;
 $inline-padding: 1.5rem;
 $date-height: 3rem;
 
+$circleInnerSize: 12rem;
+$circleRimSize: 3rem;
+
 :export {
     primaryColor: $primary-color;
 }

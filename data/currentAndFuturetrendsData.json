@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Responsive and Mobile-First Design",
+        "current": "Current Trend: Responsive design remains crucial, ensuring websites adapt seamlessly to various devices and screen sizes. Mobile-first design prioritizes the mobile user experience due to the dominance of smartphones.",
+        "future": "Future Projection: Mobile-first design will continue to gain importance as mobile browsing surpasses desktop usage. Websites will be designed with mobile optimization at the forefront."
+    },
+    {
+        "id": 2,
+        "title": "Progressive Web Apps (PWAs)",
+        "current": "Current Trend: PWAs combine the best of web and app experiences, offering fast loading times and offline capabilities.",
+        "future": "Future Projection: PWAs will become more prevalent as businesses seek to provide app-like experiences without the need for app stores and downloads."
+    },
+    {
+        "id": 3,
+        "title": "Web Accessibility",
+        "current": "Current Trend: Web accessibility is gaining prominence, ensuring websites are usable by people with disabilities.",
+        "future": "Future Projection: Accessibility standards will be further enforced, making inclusive web design a fundamental aspect of development."
+    },
+    {
+        "id": 4,
+        "title": "AI and Chatbots",
+        "current": "Current Trend: AI-powered chatbots enhance user engagement and provide instant customer support.",
+        "future": "Future Projection: AI integration will expand, enabling more advanced personalization, predictive analytics, and natural language interactions."
+    },
+    {
+        "id": 5,
+        "title": "Voice Search and Assistants",
+        "current": "Current Trend: Voice search is changing SEO strategies, as users increasingly rely on voice assistants like Siri and Google Assistant.",
+        "future": "Future Projection: Voice interfaces will become more prevalent, necessitating websites to optimize content for voice search and interaction."
+    },
+    {
+        "id": 6,
+        "title": "Motion UI and Microinteractions",
+        "current": "Current Trend: Motion UI and microinteractions enhance user engagement and create visually appealing experiences.",
+        "future": "Future Projection: More websites will incorporate subtle animations, transitions, and interactive elements to elevate user interactions."
+    },
+    {
+        "id": 7,
+        "title": "Serverless Architecture",
+        "current": "Current Trend: Serverless architecture reduces the need for traditional server management, allowing developers to focus on code.",
+        "future": "Future Projection: Serverless computing will continue to evolve, offering more efficient and cost-effective ways to build and deploy applications."
+    },
+    {
+        "id": 8,
+        "title": "Cybersecurity and Privacy Focus",
+        "current": "Current Trend: Data breaches underscore the importance of cybersecurity and data privacy measures.",
+        "future": "Future Projection: Stricter data protection regulations and increasing user concerns will drive enhanced cybersecurity practices."
+    },
+    {
+        "id": 9,
+        "title": "Web Components",
+        "current": "Current Trend: Web components allow developers to create reusable and modular components across different frameworks.",
+        "future": "Future Projection: Web components will become more standardized, enabling a more unified approach to component-based development."
+    },
+    {
+        "id": 10,
+        "title": "Low-Code and No-Code Development",
+        "current": "Current Trend: Low-code and no-code platforms empower non-developers to create applications with minimal coding.",
+        "future": "Future Projection: These platforms will continue to evolve, enabling faster prototyping and application development."
+    },
+    {
+        "id": 11,
+        "title": "3D and Immersive Experiences",
+        "current": "Current Trend: 3D graphics and virtual reality (VR) elements are being integrated into web experiences.",
+        "future": "Future Projection: More websites will incorporate immersive technologies to provide engaging and interactive user experiences."
+    },
+    {
+        "id": 12,
+        "title": "Green Web Development",
+        "current": "Current Trend: Green web development focuses on energy-efficient and sustainable practices.",
+        "future": "Future Projection: Sustainable practices will become integral to web development, driven by the need for energy conservation."
+    }
+]

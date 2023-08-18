@@ -25,3 +25,18 @@
         z-index: $z-index;
     }
 }
+
+@mixin button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: $tertiary-color;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $primary-color;
+    border: 1px solid lighten($primary-color, 20%);
+    line-height: 20px;
+}
