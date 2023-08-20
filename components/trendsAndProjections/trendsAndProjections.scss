@@ -1,24 +1,17 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
 $hexagon-width: 250px;
 $hexagon-height: $hexagon-width * 0.55;
 $hexagon-margin: 25px;
-$hexagon-title-color: #fff;
-$hexagon-border-color: #fff;
-$hexagon-border-color--hover: #72f88e;
-$hexagon-image-color: #3ea0eb;
+$hexagon-border-color: $primary-color;
+$hexagon-border-color--hover: $secondary-color;
+$hexagon-image-color: $secondary-color;
 $honeycomb-max-width: 1200px;
 $viewport-thereshold: $hexagon-width + $hexagon-margin;
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-
-body {
-    font-family: "Montserrat", sans-serif;
-    background: #3ea0eb;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+.trends {
+    margin-top: 3rem;
 }
 
 .honeycomb {
@@ -28,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: $honeycomb-max-width;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 0;
     transform: translateY(#{$hexagon-height/4});
 
@@ -42,6 +35,7 @@ body {
 
         text-align: center;
         z-index: 1;
+        position: relative;
 
         &__title {
             height: 100%;
@@ -51,14 +45,41 @@ body {
             hyphens: auto;
             word-break: break-word;
             text-transform: uppercase;
-            color: #fff;
+            color: $primary-color;
             font-weight: 700;
             font-size: 1.75em;
             transition: opacity 350ms;
+            text-shadow:
+                1px 1px 1px $shadow-color,
+                2px 2px 2px $secondary-color;
 
             > small {
                 font-weight: 300;
                 margin-top: 0.25em;
+            }
+        }
+
+        &__descriptionCurrent {
+            opacity: 0;
+            position: absolute;
+            height: 100%;
+            @include flex-center;
+            top: 0;
+            left: 0;
+
+            &--content {
+                border: 1px solid $tertiary-color;
+                border-radius: 10px;
+                background-color: $tertiary-color;
+                padding: 0.5rem;
+                margin: 0.3rem;
+                box-shadow: 1px 2px 5px $shadow-color;
+
+                & > div {
+                    color: $primary-color;
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
             }
         }
 
@@ -98,6 +119,14 @@ body {
 
         &:hover {
             .honeycomb-cell__title {
+                opacity: 0;
+            }
+
+            .honeycomb-cell__descriptionCurrent {
+                opacity: 1;
+            }
+
+            .honeycomb-cell__descriptionFuture {
                 opacity: 0;
             }
 
