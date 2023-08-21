@@ -1,0 +1,36 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & .button {
+        @include flex-center;
+        padding: 0.5rem;
+        background-color: $primary-color;
+        color: $tertiary-color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &__icon {
+            margin-right: 0.5rem;
+        }
+
+        &:hover {
+            background-color: lighten($primary-color, 15%);
+        }
+    }
+}

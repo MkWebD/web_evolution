@@ -1,0 +1,36 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
+.conclusion {
+    margin-top: 10rem;
+    height: 100vh;
+    @include flex-center(space-between, center, column);
+    &__header {
+        margin-bottom: 2rem;
+    }
+    &__content {
+        font-weight: bold;
+        border: 2px solid $primary-color;
+        border-radius: 25px 0;
+        box-shadow: 2px 2px 5px rgba($shadow-color, 0.5);
+        width: 70vw;
+        margin: 0 auto;
+        padding: 1rem;
+        & > *:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__footer {
+        align-self: flex-start;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .conclusion {
+        margin-top: 5rem;
+        &__content {
+            width: 90vw;
+        }
+    }
+}
