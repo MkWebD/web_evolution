@@ -67,6 +67,10 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
             top: 0;
             left: 0;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             &--content {
                 border: 1px solid $tertiary-color;
                 border-radius: 10px;

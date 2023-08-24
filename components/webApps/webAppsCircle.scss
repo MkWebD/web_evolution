@@ -15,6 +15,10 @@
     z-index: 0;
     --clipY2: 0%;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     &::before,
     &::after {
         @include pseudo-element(absolute, inline-block, -1);
